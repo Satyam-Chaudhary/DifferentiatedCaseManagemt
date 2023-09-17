@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Add your head content here -->
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+</head>
+<body>
+   
+    <div id = "parentdiv"> 
+        {% include 'sidebar.html' %}
+        {% include 'mainbar.html'%}
+        {% block content %}{% endblock %}
+    </div>
+   
+     <!-- Include the sidebar -->
+   
+        
+   
+
+</body>
+</html>
